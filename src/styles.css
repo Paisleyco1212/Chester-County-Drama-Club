@@ -1,0 +1,118 @@
+body{
+  background-color: #d6e0ff;
+  width: available;
+  height: available;
+}
+
+/* Font */
+@font-face {
+   font-family: Vollkorn;
+   src: url(href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet");
+}
+@font-face {
+   font-family: Martel;
+   src: url(href="https://fonts.googleapis.com/css?family=Martel|Vollkorn&display=swap" rel="stylesheet");
+}
+
+/* Navbar */
+.navbar{
+}
+ 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+}
+
+li {
+  float: left;
+  font-family: "Vollkorn","Martel", serif;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 20px;
+  width: 150px;
+  
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+h1{
+  color: #0b409c;
+}
+
+p{
+  color: pink;
+  font-family: "Vollkorn","Martel", serif;
+}
+
+/* Thirds */
+.container{
+    width: available;
+    height: available;
+}
+
+.leftpane{
+    width: 25%;
+    min-width: 120px;
+    height: 100%;
+    min-height: 650px;
+    float: left;
+    border-collapse: collapse;
+}
+
+.middlepane{
+   width: 50%;
+   height: 100%;
+   min-height: 650px;
+   float: left;
+   background-color: royalblue;
+   border-collapse: collapse;
+}
+.rightpane{
+    width: 25%;
+    height: 100%;
+    min-height: 650px;
+    float: left;
+    background-color: rosybrown;
+    border-collapse: collapse;
+}
+
+
+/* Flexbox */
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/** Mobile **/
+@media only screen and (max-width: 767px){
+  .leftpane{
+    display: none;
+  }
+
+  .rightpane{
+    display: none;
+  }
+
+  
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  /** Tablet **/
+    .leftpane{
+      display: none;
+    }
+  
+    .rightpane{
+      display: none;
+    }
+
+
